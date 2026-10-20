@@ -1,0 +1,133 @@
+:root {
+--primary: #2563eb;
+--bg: #f8fafc;
+--text: #1e293b;
+--radius: 8px;
+/* extra variables we will also use */
+--primary-dark: #1d4ed8;
+--surface: #ffffff;
+--border: #e2e8f0;
+--muted: #64748b;
+--space: 16px;
+}
+* { box-sizing: border-box; }
+body {
+margin: 0;
+font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+background: var(--bg);
+color: var(--text);
+line-height: 1.6;
+}
+h1, h2, h3 { line-height: 1.2; margin: 0 0 .5em; }
+html{
+    font-size: 1.7vw;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    font-size: 2vw;
+    background-color: black;
+     height: 5vw;
+     width: 100%;
+    color : white;
+}
+nav h1{
+    display: inline-block;
+}
+
+
+
+nav #subHeader {
+    display: inline-flex ;
+    justify-content: space-around;
+    height: 5vw;
+    width: 40vw;
+    background-color: black;
+}
+nav  #subHeader a{
+    color: white;
+    margin-top: 0.8vw;
+    margin-bottom: 0.1vw;
+    text-decoration: none;
+    vertical-align: center;
+    font-size: 2vw;
+     transition: 0.3s;
+}
+nav #subHeader .nonCurrentPage:hover {
+    color: darkblue;
+    border-bottom: 0.5vw rgb(71, 73, 67) solid;
+}
+nav #subHeader .currentPage{
+    color: aqua;
+    border-bottom: aqua solid 0.5vw;
+}
+        main{
+            background-color: rgb(185, 187, 184);
+            border: solid black 2px ;
+            width: 40%;
+            margin: auto;
+            border-radius: 25px;
+            margin-top: 30px;
+        }
+        main #inMain{
+            height: 40px;
+            background-color: gainsboro;
+        }
+        main h2{
+           margin-right: auto;
+           margin-left: auto;
+            text-align: center;
+        }
+        pre{
+            display: inline;
+        }
+        main:hover{
+            box-shadow: 10px 10px 10px black;
+        }
+      
+        textarea{
+            font-size: 1.5vw;
+            height: 20vw;
+            width: 35vw
+        }
+        @media(max-width : 805px) {
+            input{
+                height: 2vw;
+                width: 10vw;
+            }
+        }
+@media (prefers-color-scheme: dark){
+    nav{
+        background-color: rgb(130, 1, 185);
+
+    }
+    nav #subHeader{
+        background-color: rgb(130, 1, 185);
+    }
+    nav #subHeader .nonCurrentPage:hover:hover{
+        color: blue;
+        border-bottom: 0.5vw white solid;
+    }
+    body{
+        background-color: #202124;
+    }
+    .btn{
+        background-color: white;
+        color: black;
+    }
+    .btn:hover{
+        background-color: blue;
+    }
+    .card{
+        background-color: black;
+        color: white;
+    }
+    .card .cardHeader {
+        border-bottom: 2px solid white;
+    }
+    .card .cardBody{
+         border-bottom: 2px solid white;
+    }
+}
+    
+

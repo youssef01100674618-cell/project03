@@ -1,0 +1,89 @@
+:root {
+--primary: #2563eb;
+--bg: #f8fafc;
+--text: #1e293b;
+--radius: 8px;
+/* extra variables we will also use */
+--primary-dark: #1d4ed8;
+--surface: #ffffff;
+--border: #e2e8f0;
+--muted: #64748b;
+--space: 16px;
+}
+* { box-sizing: border-box; }
+body {
+margin: 0;
+font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+background: var(--bg);
+color: var(--text);
+line-height: 1.6;
+}
+h1, h2, h3 { line-height: 1.2; margin: 0 0 .5em; }
+html{
+    font-size: 1.7vw;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    font-size: 2vw;
+    background-color: black;
+     height: 5vw;
+     width: 100%;
+    color : white;
+}
+nav h1{
+    display: inline-block;
+}
+.btn{
+    font-size: 1.7vw;
+    background-color: black;
+    color: white;
+    border: 0.2vw solid black;
+    border-radius: 0.7vw;
+    text-decoration: none;
+    padding: 0.1vw;
+    transition: 0.3s;
+}
+.btn:hover {
+    transform: scale(1.2);
+    background-color: #2563eb;
+  
+}
+.btn:active{
+    scale: 0.9;
+
+}
+
+#searchField {
+    height: 3vw;
+    width: 30vw;
+    margin-top: 4vw;
+    margin-left: 30vw;
+}
+
+
+#myTable{
+    margin-top: 2vw;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    border-spacing : 1vw;
+    border: 0.2vw black solid;
+    vertical-align: center;
+    border-collapse: collapse;
+}
+#myTable tr , #myTable td{
+    border:  0.2vw black solid;
+    
+}
+#myTable #hdr{
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-weight: bolder;
+}
+#myTable .odd {
+    background-color: gray;
+    color: whitesmoke;
+}
+    
