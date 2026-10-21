@@ -30,6 +30,8 @@ nav {
      height: 5vw;
      width: 100%;
     color : white;
+    position: sticky;
+    top: 0;
 }
 nav h1{
     display: inline-block;
@@ -55,13 +57,19 @@ nav h1{
 }
 
 #searchField {
+    background-color: rgba(128, 128, 128, 0.28);
+    border: 0.2vw #64748b solid;
+    border-radius: 10px;
     height: 3vw;
     width: 30vw;
     margin-top: 4vw;
     margin-left: 30vw;
 }
 
-
+#searchField:focus {
+    outline: none ;
+    border: 0.2vw #006aff solid;
+}
 #myTable{
     margin-top: 2vw;
     margin-left: auto;
